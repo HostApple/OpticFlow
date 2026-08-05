@@ -18,7 +18,7 @@
 * **✊ Hold-to-Trigger Fist Gestures:** Integrated radial progress ring around palm centroids for seamless effect switching without touch input.
 * **🎨 9 Real-Time Image Processing Filters:**
   * Invert, Thermal Map, Cyber Edges, 8-Bit Pixelate, Retro Sepia, Soft Blur, RGB Glitch, Night Vision, and 3D Sunglasses.
-* **🖥️ Minimal Dark-Glass HUD:** Semi-transparent HUD overlay displaying real-time FPS, active menu state, and control guides.
+* **🖥️ Minimal Dark-Glass HUD:** Semi-transparent HUD overlay displaying real-time FPS, active menu state, and control guides. 
 
 ---
 
