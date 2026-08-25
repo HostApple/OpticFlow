@@ -37,11 +37,11 @@ FX_LIST = [
     "SOFT BLUR",
     "RGB GLITCH",
     "NIGHT VISION",
-    "3D SUNGLASSES",
+    "3D - SUNGLASSES",
 ]
 current_fx = 8  # 3d chosma
 fullscreen_mode = False
-ui_hidden = False  # Toggle for Zen Mode
+ui_hidden = False  # Toggle for FOCUS Mode
 
 COLOR_GOLD = (255, 200, 100)
 COLOR_NEON = (180, 255, 180)
@@ -487,7 +487,7 @@ while cap.isOpened():
 
         cv2.putText(
             frame,
-            "[H] ZEN MODE  |  [L] LOCK REGION  |  [C] CLEAR LOCKS  |  [Q] QUIT",
+            "[H] FOCUS MODE  |  [L] LOCK REGION  |  [C] CLEAR LOCKS  |  [Q] QUIT",
             (20, h - 9),
             cv2.FONT_HERSHEY_SIMPLEX,
             0.35,
@@ -508,11 +508,11 @@ while cap.isOpened():
         prop = cv2.WINDOW_FULLSCREEN if fullscreen_mode else cv2.WINDOW_NORMAL
         cv2.setWindowProperty(WIN_TITLE, cv2.WND_PROP_FULLSCREEN, prop)
 
-    # ZEN MODE TOGGLE
+    # FOCUS MODE TOGGLE
     elif key in [ord("h"), ord("H")]:
         ui_hidden = not ui_hidden
         banner_txt = (
-            "ZEN MODE ACTIVATED 🔕" if ui_hidden else "UI RESTORED 🔔"
+            "FOCUS ACTIVATED 🔕" if ui_hidden else "UI RESTORED 🔔"
         )
         banner_timer = t_curr
 
